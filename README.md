@@ -1,12 +1,4 @@
-# a0
-ao
-
-Citations : 
-I have discussed with Viral Prajapati , Vivek Shresta Bandaru , Kartik  , Prashant Sateesh , Ojaas Hampiholi
-Report for AI : 
-
-Part 1 : 
-
+# Finding Shortest Path
 
 ->Here , according to the assignment of finding the shortest path, I have implemented Breadth first search with a Boolean variable array so that the BFS does not revisit the visited states again. 
 ->The code that was given to us was depth first search and while running the code on the given dataset it was going to infinite loop. The reason behind this was that as it was depth first search it while it was exploring the branch, it kept on exploring a particular branch which was looped and so it was stuck in the loop itself. The solution implemented by me for this problem was to add the constraints of how a person can walk I.e. (row+1 ,column) ,  (row-1 ,column) ,  (row ,column+1) ,  (row ,column-1) and maintain a boolean array(visited array nodes list) so that it doesn’t revisit the visited node. 
@@ -25,7 +17,7 @@ Initial state. : Initial state here is #
 -> In case there is no possible solution I have displayed the path to infinity. 
 ->Also, if there is no @ or # that is if the current location is not given or if the destination location is not provided it will print the solution as data insufficient
 
-Part 2 : 
+# Part 2 : Arranging K friends.
 
 Successor function :  For N*M matrix and k friends I have here checked the constraints such that 
 				for the particular position for which we check whether that move is valid or not , I check the upper and lower side of the row and left and right side of the column such that given the location there is no friend in between the nearest building to the given position to be checked .
